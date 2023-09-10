@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheap Easy Land</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-1': '#121E52',
+            'brand-2': '#4640E1',
+            'brand-3': '#64EFE2',
+            'brand-4': '#F6F7FB',
+            'brand-5': '#53C3FF',
+            'brand-6': '#DCE8FF',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/6c43f4ca38.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+  <style type="text/tailwindcss"> @layer utilities {
+      
+      p {
+        font-size: 16px;
+      }
+      .poppins {
+        font-family: 'Poppins', sans-serif;
+
+      }
+      .playfair {
+        font-family: 'Playfair Display', serif;
+      }
+      label::after {
+        content:'+';
+        margin-left: auto;
+        font-size:24px;
+        
+      }
+      .accordion-checkbox[type='checkbox'] {
+        display:none;
+      }
+      .accordion .content {
+        overflow:hidden;
+        max-height:0;
+        transition: max-height 0.5s, padding 0.5s;
+      }
+      .accordion .accordion-checkbox[type='checkbox']:checked + label + .content {
+        max-height: 400px;
+        padding-bottom: 20px;
+
+      }
+      .accordion .accordion-checkbox[type='checkbox']:checked + label::after {
+        content: '-';
+      }
+    }
+  </style>
+</head>
+
+<body class="poppins">
+  <div class="  ">
+    <nav
+      class="max-w-6xl mx-auto  py-5 flex justify-center md:justify-between items-center px-2 xl:px-0">
+      <a href="">
+        <img
+          src="https://cheapeasyland.com/wp-content/uploads/2022/12/cropped-cheapeasyland.com-Facebook-Cover-2.png"
+          alt="logo" class="w-48  object-contain">
+      </a>
+      <div class="hidden md:flex font-semibold text-brand-4 gap-5 ">
+        <a href="#"
+          class="px-7 py-4 bg-brand-5 rounded-md duration-200 hover:scale-105  text-brand-1 ">
+          Search Properties</a>
+        <a href="#"
+          class="px-7 py-4 bg-brand-1 rounded-md  duration-200 hover:from-brand-1 transition hover:to-brand-2 hover:scale-105">
+          Contact Us</a>
+      </div>
+    </nav>
+  </div>
+  <section class="py-14 px-1 lg:px-0">
+    <div
+      class="max-w-6xl mx-auto border-t-2 border-brand-5 bg-brand-5/5 py-14 md:py-10 px-5 lg:px-20 relative text-brand-1 shadow-sm shadow-brand-5 overflow-hidden">
+      <div
+        class="absolute rounded-full w-[125px] h-[125px] bg-brand-2 right-[-1%] bottom-[-15%]  blur-2xl">
+      </div>
+      <img
+        src="https://cheapeasyland.com/wp-content/uploads/2022/12/cropped-cheapeasyland.com-Facebook-Cover-2.png"
+        alt="" class="absolute bottom-3 right-3 w-[120px]  ">
+      <div class="relative">
+        <h1 class="font-semibold text-brand-2 text-xl mb-5">Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Ut, corrupti?</h1>
+        <p class="text-brand-1 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+          repellat consequatur expedita explicabo numquam illo officia facere, odit officiis
+          suscipit hic iste error ipsum iusto, aspernatur soluta ducimus sit eaque!</p>
+        <p class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, adipisci
+          cumque quam, dolores ex, autem ipsa tempore temporibus libero iste recusandae. Quo
+          voluptas porro velit totam quam, obcaecati nesciunt corrupti sequi voluptates possimus
+          dolor officiis? Eligendi impedit veniam nemo libero!</p>
+        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nesciunt
+          architecto sint laudantium voluptates voluptas praesentium molestiae tempore tempora
+          vitae.</p>
+        <p class="mb-5">Regards,</p>
+        <h2 class="italic">Trystan Regnier</h2>
+        <h3 class="font-semibold text-brand-2">Partner / Sales / Marketing</h3>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-brand-1 relative px-3 xl:px-0">
+    <img src="./assets/bg-hosting.jpg" alt=""
+      class="absolute top-0 left-0 w-full h-full object-center hidden lg:block">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-3 gap-10 relative">
+      <!-- grid1 -->
+      <div
+        class="flex flex-col sm:flex-row lg:flex-col rounded-md overflow-hidden shadow-md hover:shadow-xl hover:shadow-brand-5 duration-200 shadow-brand-5 lg:min-h-[500px] bg-white  ">
+        <div class="mx-auto w-full sm:basis-1/2 lg:basis-auto  ">
+          <div class="bg-gradient-to-b from-brand-5 py-5 to-white w-full ">
+            <img
+              src="https://cheapeasyland.com/wp-content/uploads/2022/12/cropped-cheapeasyland.com-Facebook-Cover-2.png"
+              alt="" class="w-48 h-48 object-contain mx-auto ">
+          </div>
+          <h3
+            class="text-2xl text-brand-1 bg-white text-center font-semibold text-3xl playfair cursor-default">
+            Lorem, ipsum. </h3>
+        </div>
+        <div class="px-5 bg-white text-brand-1 sm:basis-1/2 ">
+          <hr class="mt-5 sm:hidden lg:block">
+          <p class="py-5 text-center text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Optio, ipsam? Neque reiciendis iusto, eum quasi minima corporis nobis
+            illo explicabo. </p>
+          <ul class="w-fit mx-auto mb-5 text-sm">
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-5 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem, ipsum dolor.</span>
+            </li>
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-5 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem.</span>
+            </li>
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-5 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem, ipsum.</span>
+            </li>
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-5 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem, ipsum.</span>
+            </li>
+          </ul>
+          <a href="/"
+            class="uppercase font-semibold text-white bg-gradient-to-r from-brand-5 to-brand-2 px-5 py-2 text-center flex justify-center items-center mx-5 mb-5 rounded-md"><span>View
+              Plans</span> </a>
+        </div>
+      </div>
+      <!-- grid2 -->
+      <div
+        class="flex flex-col sm:flex-row lg:flex-col rounded-md overflow-hidden shadow-md hover:shadow-xl hover:shadow-brand-2 duration-200 shadow-brand-2 lg:min-h-[500px] bg-white  ">
+        <div class="mx-auto w-full sm:basis-1/2 lg:basis-auto  ">
+          <div class="bg-gradient-to-b from-brand-2 py-5 to-white w-full ">
+            <img
+              src="https://cheapeasyland.com/wp-content/uploads/2022/12/cropped-cheapeasyland.com-Facebook-Cover-2.png"
+              alt="" class="w-48 h-48 object-contain mx-auto ">
+          </div>
+          <h3
+            class="text-2xl text-brand-1 bg-white text-center font-semibold text-3xl playfair cursor-default">
+            Lorem, ipsum.</h3>
+        </div>
+        <div class="px-5 bg-white text-brand-1 sm:basis-1/2 ">
+          <hr class="mt-5 sm:hidden lg:block">
+          <p class="py-5 text-center text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Optio, ipsam? Neque reiciendis iusto, eum quasi minima corporis nobis
+            illo explicabo. </p>
+          <ul class="w-fit mx-auto mb-5 text-sm">
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-2 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem, ipsum.</span>
+            </li>
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-2 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem, ipsum dolor.</span>
+            </li>
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-2 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem.</span>
+            </li>
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-2 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem, ipsum.</span>
+            </li>
+          </ul>
+          <a href="/"
+            class="uppercase font-semibold text-white bg-gradient-to-r from-brand-2 to-brand-1 px-5 py-2 text-center flex justify-center items-center mx-5 mb-5 rounded-md"><span>View
+              Plans</span></a>
+        </div>
+      </div>
+      <!-- grid3 -->
+      <div
+        class="flex flex-col sm:flex-row lg:flex-col rounded-md overflow-hidden shadow-md hover:shadow-xl hover:shadow-brand-3 duration-200 shadow-brand-3 lg:min-h-[500px] bg-white  ">
+        <div class="mx-auto w-full sm:basis-1/2 lg:basis-auto  ">
+          <div class="bg-gradient-to-b from-brand-3 py-5 to-white w-full ">
+            <img
+              src="https://cheapeasyland.com/wp-content/uploads/2022/12/cropped-cheapeasyland.com-Facebook-Cover-2.png"
+              alt="" class="w-48 h-48 object-contain mx-auto ">
+          </div>
+          <h3
+            class="text-2xl text-brand-1 bg-white text-center font-semibold text-3xl playfair cursor-default">
+            Lorem, ipsum.</h3>
+        </div>
+        <div class="px-5 bg-white text-brand-1 sm:basis-1/2 ">
+          <hr class="mt-5 sm:hidden lg:block">
+          <p class="py-5 text-center text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Optio, ipsam? Neque reiciendis iusto, eum quasi minima corporis nobis
+            illo explicabo. </p>
+          <ul class="w-fit mx-auto mb-5 text-sm">
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-3 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem, ipsum.</span>
+            </li>
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-3 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem, ipsum dolor.</span>
+            </li>
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-3 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem.</span>
+            </li>
+            <li class="flex items-center"><i
+                class="fa-solid fa-check text-brand-3 text-xl mr-3"></i><span
+                class="text-brand-1/75 font-semibold">Lorem, ipsum.</span>
+            </li>
+          </ul>
+          <a href="/"
+            class="uppercase font-semibold text-white bg-gradient-to-r from-brand-3 to-brand-5 px-5 py-2 text-center flex justify-center items-center mx-5 mb-5 rounded-md"><span>View
+              Plans</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-14">
+    <div class="max-w-6xl mx-auto px-2 lg:px-0">
+      <h2 class="text-brand-2 text-3xl text-center py-20 font-semibold relative">Common questions
+        you might have <div class="absolute flex gap-5 opacity-50 top-0 left-1/2 -translate-x-1/2 ">
+          <i class="fa-solid fa-question -rotate-45 fa-2x"></i><i
+            class="fa-solid fa-question fa-3x translate-y-[-30px]" si></i><i
+            class="fa-solid fa-question rotate-45 fa-2x"></i>
+        </div>
+      </h2>
+      <ul class="accordion">
+        <!-- q1 -->
+        <li class=" bg-brand-2/5 rounded-md shadow-lg mb-5 ">
+          <input type="checkbox" class="accordion-checkbox" name="accordion" id="first">
+          <label for="first"
+            class="font-semibold text-brand-2 cursor-pointer flex p-5 text-lg">Lorem, ipsum
+            dolor.</label>
+          <div class="content ">
+            <p class="px-5  text-brand-1/75">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Eveniet harum dicta id possimus ratione. Quibusdam ea deleniti officia quae ex
+              quaerat nisi error quisquam dolorem?</p>
+          </div>
+        </li>
+        <!-- q2 -->
+        <li class=" bg-brand-2/5 rounded-md shadow-lg mb-5 ">
+          <input type="checkbox" class="accordion-checkbox" name="accordion" id="second">
+          <label for="second"
+            class="font-semibold text-brand-2 cursor-pointer flex p-5 text-lg">Lorem ipsum dolor sit
+            amet consectetur adipisicing.</label>
+          <div class="content">
+            <p class="px-5  text-brand-1/75">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Eveniet harum dicta id possimus ratione. Quibusdam ea deleniti officia quae ex
+              quaerat nisi error quisquam dolorem?</p>
+          </div>
+        </li>
+        <!-- q3 -->
+        <li class=" bg-brand-2/5 rounded-md shadow-lg mb-5 ">
+          <input type="checkbox" class="accordion-checkbox" name="accordion" id="third">
+          <label for="third"
+            class="font-semibold text-brand-2 cursor-pointer flex p-5 text-lg">Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit.</label>
+          <div class="content">
+            <p class="px-5  text-brand-1/75">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quibusdam in accusantium non voluptatem quo sunt ipsa sapiente dolorem
+              consectetur magnam quidem repudiandae ipsam soluta, itaque debitis ad obcaecati illum
+              est perferendis cum consequuntur labore minus? Ad commodi voluptatum ex alias.</p>
+          </div>
+        </li>
+        <!-- q4 -->
+        <li class=" bg-brand-2/5 rounded-md shadow-lg mb-5 ">
+          <input type="checkbox" class="accordion-checkbox" name="accordion" id="fourth">
+          <label for="fourth"
+            class="font-semibold text-brand-2 cursor-pointer flex p-5 text-lg">Lorem ipsum, dolor
+            sit amet consectetur adipisicing elit. Nobis.</label>
+          <div class="content">
+            <p class="px-5  text-brand-1/75">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quibusdam in accusantium non voluptatem quo sunt ipsa sapiente dolorem
+              consectetur magnam quidem repudiandae ipsam soluta, itaque debitis ad obcaecati illum
+              est perferendis cum consequuntur labore minus? Ad commodi voluptatum ex alias.</p>
+          </div>
+        </li>
+        <!-- q5 -->
+        <li class=" bg-brand-2/5 rounded-md shadow-lg mb-5 ">
+          <input type="checkbox" class="accordion-checkbox" name="accordion" id="fifth">
+          <label for="fifth"
+            class="font-semibold text-brand-2 cursor-pointer flex p-5 text-lg">Lorem ipsum dolor
+            sit.</label>
+          <div class="content">
+            <p class="px-5  text-brand-1/75">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quibusdam in accusantium non voluptatem quo sunt ipsa sapiente dolorem
+              consectetur magnam quidem repudiandae ipsam soluta, itaque debitis ad obcaecati illum
+              est perferendis cum consequuntur labore minus? Ad commodi voluptatum ex alias.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="bg-brand-1 pt-5 pb-5 text-white ">
+    <div
+      class="max-w-6xl mx-auto px-2 lg:px-0 flex flex-col gap-5 sm:flex-row justify-between items-center text-slate-400">
+      <img
+        src="https://cheapeasyland.com/wp-content/uploads/2022/12/cropped-cheapeasyland.com-Facebook-Cover-2.png"
+        alt="" class="w-40  object-contain">
+      <span class="text-center">© 2023 Cheap Easy Land All rights reserved.</span>
+      <div class="flex gap-8 ">
+        <a href="/" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
+        <a href="/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a href="https://discord.gg/yaj6tMRx9Z" target="_blank"><i
+            class="fa-brands fa-discord fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
